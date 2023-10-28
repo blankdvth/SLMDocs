@@ -9,6 +9,7 @@ theme:
     primary: deep purple
     accent: indigo
   features:
+    - content.code.copy
     - navigation.path  # Show path at top of documents
     - navigation.indexes  # Allow section index pages (index.md under section)
     - navigation.tabs  # Top-level sections as tabs
@@ -33,6 +34,8 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
   - pymdownx.superfences
 
 extra_javascript:

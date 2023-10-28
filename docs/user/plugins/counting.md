@@ -9,7 +9,7 @@ This documentation is based on `v2.1.0`. (View the [Changelog](/changelogs/plugi
 - Messages will be marked with a ✅ once successfully processed, if you see a message without a ✅, wait for it to be processed before sending another number. Messages from the bot itself is exempt from this rule.
 
 ## Supported Syntax
-A wide variety of syntax is supported in counting. You can simply send the next number (e.g. `42`), *or* you can send an expression that evaluates to that number.
+A wide variety of syntax is supported in counting. You can simply send the next number (e.g. `#!python 42`), *or* you can send an expression that evaluates to that number.
 
 We use a minified version of the ***Python*** evaluator to evaluate the expressions -- a large amount of basic Python syntax is supported. Note that $\LaTeX$ syntax is **not** supported.
 
@@ -31,7 +31,7 @@ We use a minified version of the ***Python*** evaluator to evaluate the expressi
 
 1. Will return result as a float (decimal) number. You may need to handle decimals.
 2. Divide, then floor the result (no decimals).
-3. Divide, and return the remainder. (e.g. `5 % 2` → `1`)
+3. Divide, and return the remainder. (e.g. `#!python 5 % 2` → `#!python 1`)
 4. The `^` syntax to represent power is **not** supported. Use `**` instead. There is also a [limit](#quirks--limitations) to the size of power operations.
 
 #### Logical
@@ -54,19 +54,21 @@ We use a minified version of the ***Python*** evaluator to evaluate the expressi
     This functionality has been replaced by the `bitxor()` and `bitor()` [functions](#functions) respectively.
 
 #### Miscellaneous
-- `not`: Negation - *negates a boolean value (`not True` → `False`, `not False` → `True`)*
-- `in`: *whether something is contained within an iterable (`"i" in "team"` → `False`)*
+- `not`: Negation - *negates a boolean value (`#!python not True` → `False`, `#!python not False` → `True`)*
+- `in`: *whether something is contained within an iterable (`#!python "i" in "team"` → `False`)*
 
 ### Functions
 *When you see a parameter in a function with `foo="bar"`, or similar, that parameter is optional -- the default value is the one after the equals sign*
 
+<div class="annotate" markdown>
+
 - [`int(value, base=10)`](https://docs.python.org/3/library/functions.html#int): *Converts from a variety of data types, to an `int`. If converting from `float`, this will truncate (ignore all numbers after decimal).*
 - [`float(value)`](https://docs.python.org/3/library/functions.html#float): *Converts from a variety of data types to a `float`.*
 - [`str(value)`](https://docs.python.org/3/library/functions.html#func-str): *Converts from most data types to a `str`.*
-- [`floor(value)`](https://docs.python.org/3/library/math.html#math.floor): *Rounds down (aliases: `rounddown`, `round_down`).*
-- [`ceil(value)`](https://docs.python.org/3/library/math.html#math.ceil): *Rounds up (aliases: `roundup`, `round_up`).*
+- [`floor(value)`](https://docs.python.org/3/library/math.html#math.floor) (1): *Rounds down.*
+- [`ceil(value)`](https://docs.python.org/3/library/math.html#math.ceil) (2): *Rounds up.*
 - [`round(value, digits=0)`](https://docs.python.org/3/library/functions.html#round): *Rounds (<= 0.5 down, > 0.5 up). You can optionally specify the number of digits to keep after the decimal point.*
-- [`sqrt(value)`](https://docs.python.org/3/library/math.html#math.sqrt): *Get the square root of `value` (aliases: `sqroot`, `squareroot`).*
+- [`sqrt(value)`](https://docs.python.org/3/library/math.html#math.sqrt) (3): *Get the square root of `value`.*
 - `sin(value)`: *Get the sine of `value` **degrees**.*
 - `cos(value)`: *Get the cosine of `value` **degrees**.*
 - `tan(value)`: *Get the tangent of `value` **degrees**.*
@@ -78,6 +80,12 @@ We use a minified version of the ***Python*** evaluator to evaluate the expressi
 - `log(value, base=10)`: *Get the log of `value`, to base `10` by default.*
 - [`ln(value, base=e)`](https://docs.python.org/3/library/math.html#math.log): *Get the log of `value`, to base `e` (Euler's number) by default.*
 
+</div>
+
+1. The aliases `rounddown` and `round_down` can be used instead of `floor`.
+2. The aliases `roundup` and `round_up` can be used instead of `ceil`.
+3. The aliases `sqroot` and `squareroot` can be used instead of `sqrt`.
+
 ### Variables (Constants)
 A few variables (constants) are provided, they cannot be changed (assignment forbidden).
 
@@ -88,14 +96,15 @@ A few variables (constants) are provided, they cannot be changed (assignment for
 
 You can specify a number in another base by using the following prefixes before the number:
 
-- **Binary**: `0b` (e.g. `0b1111`)
-- **Octal**: `0o` (e.g. `0o17`)
-- **Decimal**: *no prefix* (e.g. `15`)
-- **Hexadecimal**: `0x` (e.g. `0xf`)
+- **Binary**: `0b` (e.g. `#!python 0b1111`)
+- **Octal**: `0o` (e.g. `#!python 0o17`)
+- **Decimal**: *no prefix* (e.g. `#!python 15`)
+- **Hexadecimal**: `0x` (e.g. `#!python 0xf`)
 
-If you are not performing base-specific operations, and want everything to be an int, you can convert it. You can do this with the `int()` [function](#functions).  
-If you have a base literal (e.g. `0b1111`), you can pass it directly into `int()` (e.g. `int(0b1111)`).  
-If you have a string containing a number in another base, you have to specify the base (e.g. `int("1111", 2)`).
+If you are not performing base-specific operations, and want everything to be an int, you can convert it. You can do this with the `#!python int()` [function](#functions).
+
+If you have a base literal (e.g. `#!python 0b1111`), you can pass it directly into `#!python int()` (e.g. `#!python int(0b1111)`).  
+If you have a string containing a number in another base, you have to specify the base (e.g. `#!python int("1111", 2)`).
 
 ### If-Else Expressions
 Python's in-line if expressions are supported, using the standard format:
@@ -113,5 +122,5 @@ option1 if boolean else option2
 ## Quirks & Limitations
 - **Power** operations are limited to ***`10000`*** (either base or exponent), to prevent timely calculations.
 - **Iterables** are limited to ***`10000`*** in length, to prevent memory overloading.
-- **Floats** (decimal numbers) are automatically rounded to `16` decimal places, this is a limitation of the evaluator.
+- **Floats** (decimal numbers) are automatically rounded to ***`16`*** decimal places, this is a limitation of the evaluator.
 - Certain functionality (imports, attributes starting with `_`, etc) are blocked for security reasons -- do NOT attempt to bypass these.
