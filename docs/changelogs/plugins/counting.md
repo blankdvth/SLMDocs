@@ -9,6 +9,8 @@ As a public API does not exist, whether to increment the major, minor, or patch 
 - **Patch**: A change that the end user will not notice, **OR** any bug fixes that the end user does not need to *adapt* to (without account for notice).
 
 ## [Unreleased]
+### Changed
+- Updated documentation link to new site
 
 ## [2.1.0] - 2023-10-28
 ### Added
