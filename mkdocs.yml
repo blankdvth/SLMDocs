@@ -1,0 +1,41 @@
+site_name: SLM Docs
+theme:
+  name: material
+  logo: assets/imgs/icon.png
+  favicon: assets/imgs/icon.png
+  language: en
+  palette:
+    scheme: slate
+    primary: deep purple
+    accent: indigo
+  features:
+    - navigation.path  # Show path at top of documents
+    - navigation.indexes  # Allow section index pages (index.md under section)
+    - navigation.tabs  # Top-level sections as tabs
+    - navigation.expand  # Auto-expand all subsections
+plugins:
+  - search
+  - tags
+  - mkdocs-nav-weight
+  # TODO: https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/
+  # Redirects are ready for when needed
+  # - redirects:
+  #     redirect_maps:
+  #       'old_path.md': 'new_path.md'
+markdown_extensions:
+  - toc:
+      title: Table of Contents
+      permalink: true
+      permalink_title: Jump to Section
+  - pymdownx.arithmatex:
+      generic: true
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra_javascript:
+  - assets/js/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
