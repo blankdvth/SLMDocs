@@ -1,6 +1,6 @@
 # Counting Documentation
 
-This documentation is based on `v2.1.0`. (View the [Changelog](/changelogs/plugins/counting.md))
+This documentation is based on `v2.1.0`. (View the [Changelog](/changelogs/plugins/counting))
 
 ## Rules
 - **Goal**: Count as high as possible, cooperatively (one person sends a number, someone else sends the next number, repeat).
