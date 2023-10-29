@@ -124,3 +124,13 @@ option1 if boolean else option2
 - **Iterables** are limited to ***`10000`*** in length, to prevent memory overloading.
 - **Floats** (decimal numbers) are automatically rounded to ***`16`*** decimal places, this is a limitation of the evaluator.
 - Certain functionality (imports, attributes starting with `_`, etc) are blocked for security reasons -- do NOT attempt to bypass these.
+
+## Common Mistakes
+A list of common mistakes I've seen, and what to do instead, in no particular order.
+
+- Assuming that a constant followed by brackets will implicitly multiply. They won't, you need to use `*`.  
+    - ❌ `#!python 2(3)`
+    - ✔️ `#!python 2*(3)`
+- Using `^` for power. Use `**` instead.
+    - ❌ `#!python 2^3`
+    - ✔️ `#!python 2**3`
