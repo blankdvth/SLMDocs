@@ -30,9 +30,9 @@ We use a minified version of the ***Python*** evaluator to evaluate the expressi
 </div>
 
 1. Will return result as a float (decimal) number. You may need to handle decimals.
-2. Divide, then floor the result (no decimals).
+2. Divide, then floor (round down) the result.
 3. Divide, and return the remainder. (e.g. `#!python 5 % 2` → `#!python 1`)
-4. The `^` syntax to represent power is **not** supported. Use `**` instead. There is also a [limit](#quirks--limitations) to the size of power operations.
+4. The `^` syntax to represent power is **not** supported. Use `**` instead. There is also a [limit](#quirks-limitations) to the size of power operations.
 
 #### Logical
 - `==`: Equality
