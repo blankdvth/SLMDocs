@@ -129,8 +129,8 @@ option1 if boolean else option2
 A list of common mistakes I've seen, and what to do instead, in no particular order.
 
 - Assuming that a constant followed by brackets will implicitly multiply. They won't, you need to use `*`.  
-    - ❌ `#!python 2(3)`
-    - ✔️ `#!python 2*(3)`
+    - :x: `#!python 2(3)`
+    - :white_check_mark: `#!python 2*(3)`
 - Using `^` for power. Use `**` instead.
-    - ❌ `#!python 2^3`
-    - ✔️ `#!python 2**3`
+    - :x: `#!python 2^3`
+    - :white_check_mark: `#!python 2**3`
