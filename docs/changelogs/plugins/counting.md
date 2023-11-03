@@ -16,6 +16,7 @@ As a public API does not exist, whether to increment the major, minor, or patch 
 - Updated documentation link to new site
 
 ### Fixed
+- Bot deleting its own messages thinking they were edited (underlying issue not fixed, this is just a stopgap)
 - Issue that caused some exceptions to not be handled properly
 
 ## [2.1.0] - 2023-10-28
