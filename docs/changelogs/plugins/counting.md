@@ -9,6 +9,13 @@ As a public API does not exist, whether to increment the major, minor, or patch 
 - **Patch**: A change that the end user will not notice, **OR** any bug fixes that the end user does not need to *adapt* to (without account for notice).
 
 ## [Unreleased]
+### Added
+- Additional functions
+    - `asin`
+    - `acos`
+    - `atan`
+    - `ord`
+    - `len`
 
 ## [2.1.1] - 2023-11-04
 ### Added
