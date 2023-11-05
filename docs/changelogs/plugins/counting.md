@@ -92,7 +92,11 @@ As a public API does not exist, whether to increment the major, minor, or patch 
 ### Added
 - Initial Release
 
-<!-- Hide ToC entries for ### and under, as those are the repetitive "Added", "Changed", etc -->
+<!--
+Hide ToC entries for ### and under, as those are the repetitive "Added", "Changed", etc
+Also hide the anchor button for ### headers, as they use _1, _2, etc, and will change with new entries
+-->
 <style>
 .md-sidebar--secondary .md-nav__list .md-nav__list {display: none}
+h3 > a.headerlink {visibility: hidden}
 </style>
