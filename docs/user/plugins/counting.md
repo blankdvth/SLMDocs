@@ -1,6 +1,6 @@
 # Counting Documentation
 
-This documentation is based on `v2.1.0`. (View the [Changelog](/changelogs/plugins/counting))
+This documentation is based on `v2.1.2`. (View the [Changelog](/changelogs/plugins/counting))
 
 ## Rules
 - **Goal**: Count as high as possible, cooperatively (one person sends a number, someone else sends the next number, repeat).
@@ -72,9 +72,14 @@ We use a minified version of the ***Python*** evaluator to evaluate the expressi
 - `sin(value)`: *Get the sine of `value` **degrees**.*
 - `cos(value)`: *Get the cosine of `value` **degrees**.*
 - `tan(value)`: *Get the tangent of `value` **degrees**.*
+- `asin(value)`: *Get the arcsine of `value` **degrees**.*
+- `acos(value)`: *Get the arccosine of `value` **degrees**.*
+- `atan(value)`: *Get the arctangent of `value` **degrees**.*
 - [`degrees(value_radians)`](https://docs.python.org/3/library/math.html#math.degrees): *Convert `value` in radians to degrees.*
 - [`radians(value_degrees)`](https://docs.python.org/3/library/math.html#math.radians) *Convert `value` in degrees to radians.*
 - [`abs(value)`](https://docs.python.org/3/library/functions.html#abs): *Get the absolute value of `value`.*
+- [`ord(character)`](https://docs.python.org/3/library/functions.html#ord): *Get the decimal [Unicode code point](https://en.wikipedia.org/wiki/List_of_Unicode_characters) of `character`.*
+- [`len(value)`](https://docs.python.org/3/library/functions.html#len): *Get the length of an iterable `value`.*
 - [`bitxor(a, b)`](https://docs.python.org/3/library/operator.html#operator.xor): *Get the exclusive bitwise OR (XOR) of `a` and `b`. Equivalent to `a ^ b`.*
 - [`bitor(a, b)`](https://docs.python.org/3/library/operator.html#operator.or_): *Get the bitwise OR of `a` and `b`. Equivalent to `a | b`.*
 - `log(value, base=10)`: *Get the log of `value`, to base `10` by default.*
