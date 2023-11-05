@@ -17,6 +17,9 @@ As a public API does not exist, whether to increment the major, minor, or patch 
     - `ord`
     - `len`
 
+### Changed
+- Filtered out EOL error messages resulting from unclosed apostrophe (`'`) in expressions
+
 ## [2.1.1] - 2023-11-04
 ### Added
 - Basic information about OP in message resends (for context in replies)
