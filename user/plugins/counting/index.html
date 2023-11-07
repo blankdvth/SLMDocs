@@ -1,0 +1,1104 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../">
+      
+      
+      
+      <link rel="icon" href="../../../assets/imgs/icon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
+    
+    
+      
+        <title>Counting Documentation - SLM Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4b4a2bd9.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="indigo">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#counting-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="SLM Docs" class="md-header__button md-logo" aria-label="SLM Docs" data-md-component="logo">
+      
+  <img src="../../../assets/imgs/icon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SLM Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Counting Documentation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  User
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../developer/" class="md-tabs__link">
+          
+  
+    
+  
+  Developer
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../changelogs/" class="md-tabs__link">
+          
+  
+    
+  
+  Changelogs
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="SLM Docs" class="md-nav__button md-logo" aria-label="SLM Docs" data-md-component="logo">
+      
+  <img src="../../../assets/imgs/icon.png" alt="logo">
+
+    </a>
+    SLM Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    User
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            User
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Plugins
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Plugins
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Counting Documentation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Counting Documentation
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of Contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of Contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rules" class="md-nav__link">
+    Rules
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-syntax" class="md-nav__link">
+    Supported Syntax
+  </a>
+  
+    <nav class="md-nav" aria-label="Supported Syntax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operations" class="md-nav__link">
+    Operations
+  </a>
+  
+    <nav class="md-nav" aria-label="Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arithmetic" class="md-nav__link">
+    Arithmetic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logical" class="md-nav__link">
+    Logical
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binary" class="md-nav__link">
+    Binary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miscellaneous" class="md-nav__link">
+    Miscellaneous
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables-constants" class="md-nav__link">
+    Variables (Constants)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#base-literals" class="md-nav__link">
+    Base Literals
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-else-expressions" class="md-nav__link">
+    If-Else Expressions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quirks-limitations" class="md-nav__link">
+    Quirks &amp; Limitations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-mistakes" class="md-nav__link">
+    Common Mistakes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../developer/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Developer
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Developer
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../changelogs/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Changelogs
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Changelogs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Plugins
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Plugins
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../changelogs/plugins/counting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Counting Changelog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of Contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of Contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rules" class="md-nav__link">
+    Rules
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-syntax" class="md-nav__link">
+    Supported Syntax
+  </a>
+  
+    <nav class="md-nav" aria-label="Supported Syntax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operations" class="md-nav__link">
+    Operations
+  </a>
+  
+    <nav class="md-nav" aria-label="Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arithmetic" class="md-nav__link">
+    Arithmetic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logical" class="md-nav__link">
+    Logical
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binary" class="md-nav__link">
+    Binary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miscellaneous" class="md-nav__link">
+    Miscellaneous
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables-constants" class="md-nav__link">
+    Variables (Constants)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#base-literals" class="md-nav__link">
+    Base Literals
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-else-expressions" class="md-nav__link">
+    If-Else Expressions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quirks-limitations" class="md-nav__link">
+    Quirks &amp; Limitations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-mistakes" class="md-nav__link">
+    Common Mistakes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="counting-documentation">Counting Documentation<a class="headerlink" href="#counting-documentation" title="Jump to Section">&para;</a></h1>
+<p>This documentation is based on <code>v2.1.0</code>. (View the <a href="/changelogs/plugins/counting">Changelog</a>)</p>
+<h2 id="rules">Rules<a class="headerlink" href="#rules" title="Jump to Section">&para;</a></h2>
+<ul>
+<li><strong>Goal</strong>: Count as high as possible, cooperatively (one person sends a number, someone else sends the next number, repeat).</li>
+<li>You may <strong>not</strong> send two numbers in a row by yourself.</li>
+<li>The count will reset to <code>0</code> whenever someone sends the wrong number, or sends twice in a row.</li>
+<li>Messages will be marked with a ✅ once successfully processed, if you see a message without a ✅, wait for it to be processed before sending another number. Messages from the bot itself is exempt from this rule.</li>
+</ul>
+<h2 id="supported-syntax">Supported Syntax<a class="headerlink" href="#supported-syntax" title="Jump to Section">&para;</a></h2>
+<p>A wide variety of syntax is supported in counting. You can simply send the next number (e.g. <code class="highlight"><span class="mi">42</span></code>), <em>or</em> you can send an expression that evaluates to that number.</p>
+<p>We use a minified version of the <strong><em>Python</em></strong> evaluator to evaluate the expressions -- a large amount of basic Python syntax is supported. Note that <span class="arithmatex">\(\LaTeX\)</span> syntax is <strong>not</strong> supported.</p>
+<p><strong><em>Expressions must evaluate to an integer, if it evaluates to a float (decimal number), the expression will not be considered.</em></strong></p>
+<h3 id="operations">Operations<a class="headerlink" href="#operations" title="Jump to Section">&para;</a></h3>
+<h4 id="arithmetic">Arithmetic<a class="headerlink" href="#arithmetic" title="Jump to Section">&para;</a></h4>
+<div class="annotate">
+<ul>
+<li><code>+</code>: Addition</li>
+<li><code>-</code>: Subtraction</li>
+<li><code>*</code>: Multiplication</li>
+<li><code>/</code>: Division (1)</li>
+<li><code>//</code>: Floor Division (2)</li>
+<li><code>%</code>: Modulus (3)</li>
+<li><code>**</code>: Power (4)</li>
+</ul>
+</div>
+<ol>
+<li>Will return result as a float (decimal) number. You may need to handle decimals.</li>
+<li>Divide, then floor (round down) the result.</li>
+<li>Divide, and return the remainder. (e.g. <code class="highlight"><span class="mi">5</span> <span class="o">%</span> <span class="mi">2</span></code> → <code class="highlight"><span class="mi">1</span></code>)</li>
+<li>The <code>^</code> syntax to represent power is <strong>not</strong> supported. Use <code>**</code> instead. There is also a <a href="#quirks-limitations">limit</a> to the size of power operations.</li>
+</ol>
+<h4 id="logical">Logical<a class="headerlink" href="#logical" title="Jump to Section">&para;</a></h4>
+<ul>
+<li><code>==</code>: Equality</li>
+<li><code>&lt;</code>: Less Than</li>
+<li><code>&gt;</code>: Greater Than</li>
+<li><code>&lt;=</code>: Less Than or Equal To</li>
+<li><code>&gt;=</code>: Greater Than or Equal To</li>
+</ul>
+<h4 id="binary">Binary<a class="headerlink" href="#binary" title="Jump to Section">&para;</a></h4>
+<ul>
+<li><code>&lt;&lt;</code>: Bitwise Left Shift</li>
+<li><code>&gt;&gt;</code>: Bitwise Right Shift</li>
+<li><code>&amp;</code>: Bitwise AND</li>
+<li><code>~</code>: Bitwise Invert</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Syntax for bitwise XOR (<code>^</code>) and bitwise OR (<code>|</code>) was removed to prevent confusion with the power and absolute value operators respectively.</p>
+<p>This functionality has been replaced by the <code>bitxor()</code> and <code>bitor()</code> <a href="#functions">functions</a> respectively.</p>
+</div>
+<h4 id="miscellaneous">Miscellaneous<a class="headerlink" href="#miscellaneous" title="Jump to Section">&para;</a></h4>
+<ul>
+<li><code>not</code>: Negation - <em>negates a boolean value (<code class="highlight"><span class="ow">not</span> <span class="kc">True</span></code> → <code>False</code>, <code class="highlight"><span class="ow">not</span> <span class="kc">False</span></code> → <code>True</code>)</em></li>
+<li><code>in</code>: <em>whether something is contained within an iterable (<code class="highlight"><span class="s2">&quot;i&quot;</span> <span class="ow">in</span> <span class="s2">&quot;team&quot;</span></code> → <code>False</code>)</em></li>
+</ul>
+<h3 id="functions">Functions<a class="headerlink" href="#functions" title="Jump to Section">&para;</a></h3>
+<p><em>When you see a parameter in a function with <code>foo="bar"</code>, or similar, that parameter is optional -- the default value is the one after the equals sign</em></p>
+<div class="annotate">
+<ul>
+<li><a href="https://docs.python.org/3/library/functions.html#int"><code>int(value, base=10)</code></a>: <em>Converts from a variety of data types, to an <code>int</code>. If converting from <code>float</code>, this will truncate (ignore all numbers after decimal).</em></li>
+<li><a href="https://docs.python.org/3/library/functions.html#float"><code>float(value)</code></a>: <em>Converts from a variety of data types to a <code>float</code>.</em></li>
+<li><a href="https://docs.python.org/3/library/functions.html#func-str"><code>str(value)</code></a>: <em>Converts from most data types to a <code>str</code>.</em></li>
+<li><a href="https://docs.python.org/3/library/math.html#math.floor"><code>floor(value)</code></a> (1): <em>Rounds down.</em></li>
+<li><a href="https://docs.python.org/3/library/math.html#math.ceil"><code>ceil(value)</code></a> (2): <em>Rounds up.</em></li>
+<li><a href="https://docs.python.org/3/library/functions.html#round"><code>round(value, digits=0)</code></a>: <em>Rounds. You can optionally specify the number of digits to keep after the decimal point. <code class="highlight"><span class="mf">.5</span></code>'s are rounded to the nearest <strong>even</strong> number (e.g. <code class="highlight"><span class="mf">2.5</span></code> <strong>down</strong> to <code class="highlight"><span class="mi">2</span></code>, but <code class="highlight"><span class="mf">3.5</span></code> <strong>up</strong> to <code class="highlight"><span class="mi">4</span></code>)</em></li>
+<li><a href="https://docs.python.org/3/library/math.html#math.sqrt"><code>sqrt(value)</code></a> (3): <em>Get the square root of <code>value</code>.</em></li>
+<li><code>sin(value)</code>: <em>Get the sine of <code>value</code> </em><em>degrees</em><em>.</em></li>
+<li><code>cos(value)</code>: <em>Get the cosine of <code>value</code> </em><em>degrees</em><em>.</em></li>
+<li><code>tan(value)</code>: <em>Get the tangent of <code>value</code> </em><em>degrees</em><em>.</em></li>
+<li><a href="https://docs.python.org/3/library/math.html#math.degrees"><code>degrees(value_radians)</code></a>: <em>Convert <code>value</code> in radians to degrees.</em></li>
+<li><a href="https://docs.python.org/3/library/math.html#math.radians"><code>radians(value_degrees)</code></a> <em>Convert <code>value</code> in degrees to radians.</em></li>
+<li><a href="https://docs.python.org/3/library/functions.html#abs"><code>abs(value)</code></a>: <em>Get the absolute value of <code>value</code>.</em></li>
+<li><a href="https://docs.python.org/3/library/operator.html#operator.xor"><code>bitxor(a, b)</code></a>: <em>Get the exclusive bitwise OR (XOR) of <code>a</code> and <code>b</code>. Equivalent to <code>a ^ b</code>.</em></li>
+<li><a href="https://docs.python.org/3/library/operator.html#operator.or_"><code>bitor(a, b)</code></a>: <em>Get the bitwise OR of <code>a</code> and <code>b</code>. Equivalent to <code>a | b</code>.</em></li>
+<li><code>log(value, base=10)</code>: <em>Get the log of <code>value</code>, to base <code>10</code> by default.</em></li>
+<li><a href="https://docs.python.org/3/library/math.html#math.log"><code>ln(value, base=e)</code></a>: <em>Get the log of <code>value</code>, to base <code>e</code> (Euler's number) by default.</em></li>
+</ul>
+</div>
+<ol>
+<li>The aliases <code>rounddown</code> and <code>round_down</code> can be used instead of <code>floor</code>.</li>
+<li>The aliases <code>roundup</code> and <code>round_up</code> can be used instead of <code>ceil</code>.</li>
+<li>The aliases <code>sqroot</code> and <code>squareroot</code> can be used instead of <code>sqrt</code>.</li>
+</ol>
+<h3 id="variables-constants">Variables (Constants)<a class="headerlink" href="#variables-constants" title="Jump to Section">&para;</a></h3>
+<p>A few variables (constants) are provided, they cannot be changed (assignment forbidden).</p>
+<ul>
+<li><a href="https://docs.python.org/3/library/math.html#math.pi"><code>pi</code></a></li>
+<li><a href="https://docs.python.org/3/library/math.html#math.e"><code>e</code></a></li>
+</ul>
+<h3 id="base-literals">Base Literals<a class="headerlink" href="#base-literals" title="Jump to Section">&para;</a></h3>
+<p>You can specify a number in another base by using the following prefixes before the number:</p>
+<ul>
+<li><strong>Binary</strong>: <code>0b</code> (e.g. <code class="highlight"><span class="mb">0b1111</span></code>)</li>
+<li><strong>Octal</strong>: <code>0o</code> (e.g. <code class="highlight"><span class="mo">0o17</span></code>)</li>
+<li><strong>Decimal</strong>: <em>no prefix</em> (e.g. <code class="highlight"><span class="mi">15</span></code>)</li>
+<li><strong>Hexadecimal</strong>: <code>0x</code> (e.g. <code class="highlight"><span class="mh">0xf</span></code>)</li>
+</ul>
+<p>If you are not performing base-specific operations, and want everything to be an int, you can convert it. You can do this with the <code class="highlight"><span class="nb">int</span><span class="p">()</span></code> <a href="#functions">function</a>.</p>
+<p>If you have a base literal (e.g. <code class="highlight"><span class="mb">0b1111</span></code>), you can pass it directly into <code class="highlight"><span class="nb">int</span><span class="p">()</span></code> (e.g. <code class="highlight"><span class="nb">int</span><span class="p">(</span><span class="mb">0b1111</span><span class="p">)</span></code>).<br />
+If you have a string containing a number in another base, you have to specify the base (e.g. <code class="highlight"><span class="nb">int</span><span class="p">(</span><span class="s2">&quot;1111&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span></code>).</p>
+<h3 id="if-else-expressions">If-Else Expressions<a class="headerlink" href="#if-else-expressions" title="Jump to Section">&para;</a></h3>
+<p>Python's in-line if expressions are supported, using the standard format:
+<div class="highlight"><pre><span></span><code><span class="n">option1</span> <span class="k">if</span> <span class="n">boolean</span> <span class="k">else</span> <span class="n">option2</span>
+</code></pre></div></p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="mi">100</span> <span class="k">if</span> <span class="mi">2</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span>
+</code></pre></div>
+<p>Would evaluate to <code>100</code> because <code>2&gt;1</code>. If it were <code>1&gt;2</code> instead, it would've evaluated to <code>0</code>.</p>
+</div>
+<h2 id="quirks-limitations">Quirks &amp; Limitations<a class="headerlink" href="#quirks-limitations" title="Jump to Section">&para;</a></h2>
+<ul>
+<li><strong>Power</strong> operations are limited to <strong><em><code>10000</code></em></strong> (either base or exponent), to prevent timely calculations.</li>
+<li><strong>Iterables</strong> are limited to <strong><em><code>10000</code></em></strong> in length, to prevent memory overloading.</li>
+<li><strong>Floats</strong> (decimal numbers) are automatically rounded to <strong><em><code>16</code></em></strong> decimal places, this is a limitation of the evaluator.</li>
+<li>Certain functionality (imports, attributes starting with <code>_</code>, etc) are blocked for security reasons -- do NOT attempt to bypass these.</li>
+</ul>
+<h2 id="common-mistakes">Common Mistakes<a class="headerlink" href="#common-mistakes" title="Jump to Section">&para;</a></h2>
+<p>A list of common mistakes I've seen, and what to do instead, in no particular order.</p>
+<ul>
+<li>Assuming that a constant followed by brackets will implicitly multiply. They won't, you need to use <code>*</code>.  <ul>
+<li><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/274c.svg" title=":x:" /> <code class="highlight"><span class="mi">2</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span></code></li>
+<li><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2705.svg" title=":white_check_mark:" /> <code class="highlight"><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span></code></li>
+</ul>
+</li>
+<li>Using <code>^</code> for power. Use <code>**</code> instead.<ul>
+<li><img alt="❌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/274c.svg" title=":x:" /> <code class="highlight"><span class="mi">2</span><span class="o">^</span><span class="mi">3</span></code></li>
+<li><img alt="✅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2705.svg" title=":white_check_mark:" /> <code class="highlight"><span class="mi">2</span><span class="o">**</span><span class="mi">3</span></code></li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "navigation.path", "navigation.indexes", "navigation.tabs", "navigation.expand"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.81fa17fe.min.js"></script>
+      
+        <script src="../../../assets/js/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
