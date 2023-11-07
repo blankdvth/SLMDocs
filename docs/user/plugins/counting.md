@@ -67,7 +67,7 @@ We use a minified version of the ***Python*** evaluator to evaluate the expressi
 - [`str(value)`](https://docs.python.org/3/library/functions.html#func-str): *Converts from most data types to a `str`.*
 - [`floor(value)`](https://docs.python.org/3/library/math.html#math.floor) (1): *Rounds down.*
 - [`ceil(value)`](https://docs.python.org/3/library/math.html#math.ceil) (2): *Rounds up.*
-- [`round(value, digits=0)`](https://docs.python.org/3/library/functions.html#round): *Rounds (<= 0.5 down, > 0.5 up). You can optionally specify the number of digits to keep after the decimal point.*
+- [`round(value, digits=0)`](https://docs.python.org/3/library/functions.html#round): *Rounds. You can optionally specify the number of digits to keep after the decimal point. `#!python .5`'s are rounded to the nearest __even__ number (e.g. `#!python 2.5` __down__ to `#!python 2`, but `#!python 3.5` __up__ to `#!python 4`)*
 - [`sqrt(value)`](https://docs.python.org/3/library/math.html#math.sqrt) (3): *Get the square root of `value`.*
 - `sin(value)`: *Get the sine of `value` **degrees**.*
 - `cos(value)`: *Get the cosine of `value` **degrees**.*
